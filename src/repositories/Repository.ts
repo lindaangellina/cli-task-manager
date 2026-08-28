@@ -1,7 +1,6 @@
-import {Entity} from "types";
-
+import { Entity } from "@apptypes/entity.types";
 export class Repository<T extends Entity> {
-    private items: T[] = [];
+    protected items: T[] = [];
     private nextId: number = 1;
 
     create(data: Omit<T, "id">): T {

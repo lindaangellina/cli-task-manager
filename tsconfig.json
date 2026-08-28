@@ -1,36 +1,40 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
 
     "paths": {
-      "*": ["./src/*"],
+      "@apptypes/*": ["./src/types/*"],
+      "@apptypes": ["./src/types"],
       "@models/*": ["./src/models/*"],
-      "@repositories/*": ["./src/repositories/*"],
-      "@services/*": ["./src/services/*"],
-      "@types/*": ["./src/types/*"],
-      "@utils/*": ["./src/utils/*"],
       "@models": ["./src/models"],
+      "@repositories/*": ["./src/repositories/*"],
       "@repositories": ["./src/repositories"],
+      "@services/*": ["./src/services/*"],
       "@services": ["./src/services"],
-      "@types": ["./src/types"],
+      "@utils/*": ["./src/utils/*"],
       "@utils": ["./src/utils"],
-      "@config/*": ["./src/config/*"]
+      "@cli/*": ["./src/cli/*"],
+      "@cli": ["./src/cli"],
+      "@config/*": ["./src/config/*"],
+      "@config": ["./src/config"]
     },
 
     // Environment Settings
-    // See also https://aka.ms/tsconfig/module
     "module": "commonjs",
     "target": "ES2020",
-    "types": [
-      "node"
-    ],
-    // For nodejs:
+    "types": ["node"],
     "lib": ["ES2020"],
-    // "types": ["node"],
-    // and npm install -D @types/node
+
+    // Module resolution
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true,
 
     // Other Outputs
     "sourceMap": true,
@@ -38,25 +42,13 @@
     "declarationMap": true,
 
     // Stricter Typechecking Options
+    "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-
-    // Style Options
     "noImplicitReturns": true,
-    // "noImplicitOverride": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-    "esModuleInterop": true,
-
-    // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": false,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
+    "noUnusedParameters": true
   },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
