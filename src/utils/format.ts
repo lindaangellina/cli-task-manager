@@ -6,6 +6,4 @@ export function formatTanggal(tanggal: Date): string {
     });
 }
 
-export function formatNama(nama: string): string {
-    return nama.toUpperCase();
-}
+// TODO: tambahkan fungsi format lain sesuai kebutuhan (misal formatStatus, formatPrioritas)

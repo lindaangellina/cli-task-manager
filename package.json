@@ -1,7 +1,7 @@
 {
-  "name": "ts-project-template",
+  "name": "cli-task-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI Task Manager — aplikasi pengelola tugas berbasis terminal",
   "license": "ISC",
   "author": "Linda Angellina",
   "type": "commonjs",

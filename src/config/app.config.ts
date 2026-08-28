@@ -1,11 +1,11 @@
 interface AppConfig {
-    AppName: string;
+    appName: string;
     version: string;
-    maxPeserta: number;
+    maxTasks: number;
 }
 
 export const APP_CONFIG: AppConfig = {
-    AppName: "ts-project-template",
+    appName: "cli-task-manager",
     version: "1.0.0",
-    maxPeserta: 1000,
+    maxTasks: 1000,
 }
