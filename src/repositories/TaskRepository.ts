@@ -18,6 +18,8 @@ export default class TaskRepository extends Repository<Task> {
   }
 
   muatDariArray(tasks: Task[]): void {
-    this.items = tasks;
-  }
+  this.items = tasks;
+  const idTertinggi = tasks.reduce((max, t) => Math.max(max, t.id), 0);
+  this.nextId = idTertinggi + 1;
+}
 }

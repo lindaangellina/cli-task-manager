@@ -1,7 +1,7 @@
 import { Entity } from "@apptypes/entity.types";
 export class Repository<T extends Entity> {
     protected items: T[] = [];
-    private nextId: number = 1;
+    protected nextId: number = 1;
 
     create(data: Omit<T, "id">): T {
         const newItem = { ...data, id: this.nextId++ } as T;

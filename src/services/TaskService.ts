@@ -5,8 +5,9 @@ import type { Task, TaskStatus, Priority, TaskStats } from "@apptypes/task.types
 export default class TaskService {
   private repo: TaskRepository;
 
-  constructor() {
+    constructor(tasks: Task[] = []) {
     this.repo = new TaskRepository();
+    this.repo.muatDariArray(tasks);
   }
 
   tambahTask(judul: string, prioritas?: Priority): Task {

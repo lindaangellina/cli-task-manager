@@ -1,10 +1,15 @@
 import { parseArgs } from "@cli/parser";
-import { APP_CONFIG } from "@config/app.config";
-const args = process.argv.slice(2);
-const command = parseArgs(args);
-console.log("Command terparsing:", command);
+import { jalankanCommand } from "@cli/commands";
+import TaskService from "@services/TaskService";
+import { StorageService } from "@services/StorageService";
 
-console.log(`=== ${APP_CONFIG.appName} v${APP_CONFIG.version} ===\n`);
+// Muat data saat start
+const dataTersimpan = StorageService.muat();
+const service = new TaskService(dataTersimpan);
 
-// TODO: entry point CLI Task Manager — akan diisi setelah types, model,
-// repository, dan service selesai dibuat.
+// Jalankan command
+const command = parseArgs(process.argv.slice(2));
+jalankanCommand(command, service);
+
+// Simpan data setelah command selesai
+StorageService.simpan(service.getSemuaTask());
