@@ -1,4 +1,4 @@
-import type { Task, TaskStats } from "@apptypes/task.types";
+import type { Task, TaskStats } from "../types/task.types";
 
 export function tampilkanDaftarTask(tasks: Task[]): void {
   if (tasks.length === 0) {

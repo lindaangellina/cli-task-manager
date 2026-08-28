@@ -1,5 +1,5 @@
-import {Repository} from "@repositories/Repository";
-import type { Task, TaskStatus, Priority } from "@apptypes/task.types";
+import {Repository} from "./Repository";
+import type { Task, TaskStatus, Priority } from "../types/task.types";
 
 export default class TaskRepository extends Repository<Task> {
   

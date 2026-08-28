@@ -1,4 +1,4 @@
-import { Entity } from "@apptypes/entity.types";
+import { Entity } from "../types/entity.types";
 export class Repository<T extends Entity> {
     protected items: T[] = [];
     protected nextId: number = 1;

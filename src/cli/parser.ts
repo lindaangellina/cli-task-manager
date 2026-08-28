@@ -1,5 +1,5 @@
-import type { Command } from "@apptypes/command.types";
-import { isStatusValid } from "@utils/validasi";
+import type { Command } from "../types/command.types";
+import { isStatusValid } from "../utils/validasi";
 
 export function parseArgs(args: string[]): Command {
   const [perintah, ...sisanya] = args;
