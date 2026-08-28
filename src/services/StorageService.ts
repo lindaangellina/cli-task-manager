@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import type { Task } from "../types/task.types";
+import type { Task } from "@apptypes/task.types";
 
 const DATA_DIR = path.join(__dirname, "../../data");
 const DATA_FILE = path.join(DATA_DIR, "tasks.json");

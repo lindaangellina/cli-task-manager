@@ -1,7 +1,7 @@
-import type { Command } from "../types/command.types";
-import type TaskService from "../services/TaskService";
-import { isJudulValid } from "../utils/validasi";
-import { tampilkanDaftarTask, tampilkanStats, tampilkanHelp, tampilkanError, tampilkanSukses } from "./display";
+import type { Command } from "@apptypes/command.types";
+import type TaskService from "@services/TaskService";
+import { isJudulValid } from "@utils/validasi";
+import { tampilkanDaftarTask, tampilkanStats, tampilkanHelp, tampilkanError, tampilkanSukses } from "@cli/display";
 
 export function jalankanCommand(command: Command, service: TaskService): void {
   switch (command.type) {

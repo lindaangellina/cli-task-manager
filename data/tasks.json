@@ -3,24 +3,24 @@
     "judul": "Belajar TypeScript",
     "status": "done",
     "prioritas": "medium",
-    "createdAt": "2026-08-28T07:01:03.695Z",
-    "updatedAt": "2026-08-28T07:01:03.695Z",
+    "createdAt": "2026-08-28T07:34:34.617Z",
+    "updatedAt": "2026-08-28T07:34:34.617Z",
     "id": 1
   },
   {
     "judul": "Setup CLI parser",
     "status": "in_progress",
     "prioritas": "medium",
-    "createdAt": "2026-08-28T07:01:12.199Z",
-    "updatedAt": "2026-08-28T07:01:12.199Z",
+    "createdAt": "2026-08-28T07:34:42.934Z",
+    "updatedAt": "2026-08-28T07:34:42.934Z",
     "id": 2
   },
   {
     "judul": "Baca dokumentasi Node.js",
     "status": "todo",
     "prioritas": "medium",
-    "createdAt": "2026-08-28T07:01:20.000Z",
-    "updatedAt": "2026-08-28T07:01:20.000Z",
+    "createdAt": "2026-08-28T07:34:52.122Z",
+    "updatedAt": "2026-08-28T07:34:52.122Z",
     "id": 3
   }
 ]

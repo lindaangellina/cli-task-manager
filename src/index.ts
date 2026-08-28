@@ -1,7 +1,7 @@
-import { parseArgs } from "./cli/parser";
-import { jalankanCommand } from "./cli/commands";
-import TaskService from "./services/TaskService";
-import { StorageService } from "./services/StorageService";
+import { parseArgs } from "@cli/parser";
+import { jalankanCommand } from "@cli/commands";
+import TaskService from "@services/TaskService";
+import { StorageService } from "@services/StorageService";
 
 // Muat data saat start
 const dataTersimpan = StorageService.muat();

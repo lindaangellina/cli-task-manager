@@ -1,4 +1,4 @@
-import type { Priority, TaskStatus } from "../types/task.types";
+import type { Priority, TaskStatus } from "@apptypes/task.types";
 
 export function isJudulValid(judul: string): boolean {
   return judul.length >= 3 ;

@@ -1,6 +1,6 @@
-import TaskRepository from "../repositories/TaskRepository";
-import TaskModel from "../models/Task";
-import type { Task, TaskStatus, Priority, TaskStats } from "../types/task.types";
+import TaskRepository from "@repositories/TaskRepository";
+import TaskModel from "@models/Task";
+import type { Task, TaskStatus, Priority, TaskStats } from "@apptypes/task.types";
 
 export default class TaskService {
   private repo: TaskRepository;

@@ -4,6 +4,23 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
+    "paths": {
+      "@apptypes/*": ["./src/types/*"],
+      "@apptypes": ["./src/types"],
+      "@models/*": ["./src/models/*"],
+      "@models": ["./src/models"],
+      "@repositories/*": ["./src/repositories/*"],
+      "@repositories": ["./src/repositories"],
+      "@services/*": ["./src/services/*"],
+      "@services": ["./src/services"],
+      "@utils/*": ["./src/utils/*"],
+      "@utils": ["./src/utils"],
+      "@cli/*": ["./src/cli/*"],
+      "@cli": ["./src/cli"],
+      "@config/*": ["./src/config/*"],
+      "@config": ["./src/config"]
+    },
+
     // Environment Settings
     "module": "commonjs",
     "target": "ES2020",

@@ -76,7 +76,7 @@ src/
 - Class, Getter, Inheritance (Minggu 3-4)
 - Generics — Repository Pattern (Minggu 5)
 - Utility Types: Omit, Partial (Minggu 6)
-- Modules & Relative Imports (Minggu 7)
+- Modules & Path Alias (Minggu 7)
 
 ## Pengembang
 
